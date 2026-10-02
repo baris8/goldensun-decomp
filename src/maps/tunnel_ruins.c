@@ -322,8 +322,42 @@ void OvlFunc_964_20089dc(struct Actor *actor, int priority) {
     actor->sprite->oam.priority = priority;
 }
 
-INCLUDE_ASM("asm/maps/tunnel_ruins/OvlFunc_964_20089f4.s");
-INCLUDE_ASM("asm/maps/tunnel_ruins/OvlFunc_964_2008a4c.s");
+struct Actor *OvlFunc_964_20089f4(int x, int y, int z, int id) {
+    extern void __Actor_SetSpriteFlags();
+    extern void __Func_80929d8(int, int);
+    extern void __Func_800c548(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)API_CreateActor(id, x, y, z);
+    if (actor != 0) {
+        actor->sprite->oam.priority = 0;
+        actor->__unk55 = 0;
+        actor->__unk59 = 8;
+        __Actor_SetSpriteFlags(actor, 0);
+        __Func_80929d8((int)actor, 0xe);
+        __Func_800c548((int)actor, 1);
+        return actor;
+    }
+    return 0;
+}
+
+struct Actor *OvlFunc_964_2008a4c(int x, int y, int z, int id) {
+    extern void __Actor_SetSpriteFlags();
+    extern void __Func_80929d8(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)API_CreateActor(id, x, y, z);
+    if (actor != 0) {
+        actor->sprite->oam.priority = 1;
+        actor->__unk55 = 0;
+        actor->__unk59 = 8;
+        __Actor_SetSpriteFlags(actor, 0);
+        __Func_80929d8((int)actor, 0xf);
+        actor->flags = (actor->flags & 0xfe) | 2;
+        return actor;
+    }
+    return 0;
+}
 
 void OvlFunc_964_2008ab0(struct Actor *actor) {
     actor->pos.x += actor->bounce;
@@ -903,7 +937,15 @@ int TunnelRuins_GetEvents(void)
     if (ev == (int)_EVENT_ac) return (int)Lm964_3c0c;
     return (int)Lm964_3ef4;
 }
-INCLUDE_ASM("asm/maps/tunnel_ruins/OvlFunc_964_200a3a0.s");
+
+void OvlFunc_964_200a3a0(void) {
+    API_Func_8010704(0x49, 0x26, 5, 5, 9, 0x26);
+    OvlFunc_964_2008f10(9, 8);
+    API_Func_8010704(2, 0x24, 1, 1, ((struct Actor *)__MapActor_GetActor(8))->pos.x >> 20,
+                     ((struct Actor *)__MapActor_GetActor(8))->pos.z >> 20);
+    API_Func_8010704(2, 0x24, 1, 1, ((struct Actor *)__MapActor_GetActor(9))->pos.x >> 20,
+                     ((struct Actor *)__MapActor_GetActor(9))->pos.z >> 20);
+}
 
 void OvlFunc_964_200a410(void) {
     API_Func_8010704(0x5d, 0x1e, 6, 5, 0x1d, 0x1e);

@@ -86,7 +86,26 @@ int Sol_GetEvents(void)
     }
     return (int)Lm895_22d8;
 }
-INCLUDE_ASM("asm/maps/sol/OvlFunc_895_2008154.s");
+void OvlFunc_895_2008154(void) {
+    API_CutsceneStart();
+    API_PlaySound(0xb5);
+    API_CopyMapTiles(0x10, 0x1c, 0x15, 3, 3, 2);
+    API_WaitFrames(0xa);
+    API_CopyMapTiles(0x10, 0x1e, 0x15, 3, 3, 2);
+    API_WaitFrames(0xa);
+    API_CopyMapTiles(0x10, 0x20, 0x15, 3, 3, 2);
+    API_WaitFrames(0xa);
+    API_Func_8092b08(0, 2);
+    API_MapActor_SetSpeed(0, 0x9999, 0x4ccc);
+    API_MapActor_TravelToAnimWait(0, 0x78, 0x62);
+    API_MapActor_SetAnim(0, 2);
+    API_MapActor_TravelBy(0, 0, -8);
+    API_CutsceneWait(0xa);
+    API_MapTransitionOut();
+    API_WaitMapTransition();
+    API_Func_8091e9c(2);
+    API_CutsceneEnd();
+}
 
 extern unsigned char *iwram_3001ebc;
 

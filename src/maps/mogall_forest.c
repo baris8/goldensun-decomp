@@ -305,8 +305,43 @@ void OvlFunc_927_20089dc(struct Actor *actor, int priority) {
     actor->sprite->oam.priority = priority;
 }
 
-INCLUDE_ASM("asm/maps/mogall_forest/OvlFunc_927_20089f4.s");
-INCLUDE_ASM("asm/maps/mogall_forest/OvlFunc_927_2008a4c.s");
+struct Actor *OvlFunc_927_20089f4(int x, int y, int z, int id) {
+    extern void __Actor_SetSpriteFlags();
+    extern void __Func_80929d8(int, int);
+    extern void __Func_800c548(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)API_CreateActor(id, x, y, z);
+    if (actor != 0) {
+        actor->sprite->oam.priority = 0;
+        actor->__unk55 = 0;
+        actor->__unk59 = 8;
+        __Actor_SetSpriteFlags(actor, 0);
+        __Func_80929d8((int)actor, 0xe);
+        __Func_800c548((int)actor, 1);
+        return actor;
+    }
+    return 0;
+}
+
+struct Actor *OvlFunc_927_2008a4c(int x, int y, int z, int id) {
+    extern void __Actor_SetSpriteFlags();
+    extern void __Func_80929d8(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)API_CreateActor(id, x, y, z);
+    if (actor != 0) {
+        actor->sprite->oam.priority = 1;
+        actor->__unk55 = 0;
+        actor->__unk59 = 8;
+        __Actor_SetSpriteFlags(actor, 0);
+        __Func_80929d8((int)actor, 0xf);
+        actor->flags = (actor->flags & 0xfe) | 2;
+        return actor;
+    }
+    return 0;
+}
+
 void OvlFunc_927_2008ab0(unsigned int *p, int unused)
 {
   unsigned short *new_var3;

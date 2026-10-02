@@ -1352,8 +1352,48 @@ void OvlFunc_883_200dc98(int arg0)
     }
 }
 
-INCLUDE_ASM("asm/maps/vale_river/OvlFunc_883_200dcc4.s");
-INCLUDE_ASM("asm/maps/vale_river/OvlFunc_883_200dd14.s");
+void OvlFunc_883_200dcc4(struct Actor *actor) {
+    extern int __sin(int);
+    struct Actor *target;
+    int w;
+    int s;
+
+    w = (unsigned short)actor->waveCounter + 1;
+    target = actor->linkedActor;
+    actor->waveCounter = w;
+    if ((short)w > 0x1f) {
+        API_DeleteActor((int)actor);
+    } else {
+        s = __sin((short)w << 10);
+        actor->scale.x = s;
+        actor->scale.y = s;
+        actor->pos.x = target->pos.x;
+        actor->pos.y += 0x80 << 9;
+        actor->pos.z = target->pos.z + (((0x80 << 9) - s) * 5) + (0x80 << 12);
+    }
+}
+
+void OvlFunc_883_200dd14(struct Actor *actor) {
+    extern int __sin(int);
+    struct Actor *target;
+    int w;
+    int s;
+
+    w = (unsigned short)actor->waveCounter + 1;
+    target = actor->linkedActor;
+    actor->waveCounter = w;
+    if ((short)w > 0x1f) {
+        API_DeleteActor((int)actor);
+    } else {
+        s = __sin((short)w << 10);
+        actor->scale.x = s;
+        actor->scale.y = -s;
+        actor->pos.x = target->pos.x;
+        actor->pos.y += 0x80 << 9;
+        actor->pos.z = target->pos.z - (((0x80 << 9) - s) * 5) + (0x80 << 13);
+    }
+}
+
 INCLUDE_ASM("asm/maps/vale_river/OvlFunc_883_200dd68.s");
 INCLUDE_ASM("asm/maps/vale_river/vale_river_data.s");
 

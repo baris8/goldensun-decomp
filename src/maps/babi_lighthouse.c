@@ -335,8 +335,43 @@ void OvlFunc_965_20089dc(struct Actor *actor, int priority) {
     actor->sprite->oam.priority = priority;
 }
 
-INCLUDE_ASM("asm/maps/babi_lighthouse/OvlFunc_965_20089f4.s");
-INCLUDE_ASM("asm/maps/babi_lighthouse/OvlFunc_965_2008a4c.s");
+struct Actor *OvlFunc_965_20089f4(int x, int y, int z, int id) {
+    extern void __Actor_SetSpriteFlags();
+    extern void __Func_80929d8(int, int);
+    extern void __Func_800c548(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)API_CreateActor(id, x, y, z);
+    if (actor != 0) {
+        actor->sprite->oam.priority = 0;
+        actor->__unk55 = 0;
+        actor->__unk59 = 8;
+        __Actor_SetSpriteFlags(actor, 0);
+        __Func_80929d8((int)actor, 0xe);
+        __Func_800c548((int)actor, 1);
+        return actor;
+    }
+    return 0;
+}
+
+struct Actor *OvlFunc_965_2008a4c(int x, int y, int z, int id) {
+    extern void __Actor_SetSpriteFlags();
+    extern void __Func_80929d8(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)API_CreateActor(id, x, y, z);
+    if (actor != 0) {
+        actor->sprite->oam.priority = 1;
+        actor->__unk55 = 0;
+        actor->__unk59 = 8;
+        __Actor_SetSpriteFlags(actor, 0);
+        __Func_80929d8((int)actor, 0xf);
+        actor->flags = (actor->flags & 0xfe) | 2;
+        return actor;
+    }
+    return 0;
+}
+
 void OvlFunc_965_2008ab0(unsigned int arg0)
 {
   unsigned int r3;
@@ -577,8 +612,6 @@ void OvlFunc_965_2009184(void)
     __CutsceneEnd();
 }
 
-extern void OvlFunc_965_20089f4(unsigned int, unsigned int, unsigned int, unsigned int);
-
 void OvlFunc_965_200919c(void) {
     __CutsceneStart();
     OvlFunc_965_20089f4(0xe8 << 17, 0, 0x91 << 17, 0xdf);
@@ -784,7 +817,20 @@ void OvlFunc_965_200a7f4(void)
   __SetFlag(0xc0 << 2);
 }
 
-INCLUDE_ASM("asm/maps/babi_lighthouse/OvlFunc_965_200a820.s");
+void OvlFunc_965_200a820(void) {
+    struct Actor *actor;
+    struct Actor *other;
+
+    actor = (struct Actor *)__MapActor_GetActor(8);
+    API_Func_8092b08(8, 1);
+    API_Func_8092b08(9, 1);
+    API_Func_8010704(0x45, 0x13, 3, 3, 5, 0x13);
+    API_Func_8010704(0x45, 0x13, 3, 3, 0x11, 0x13);
+    API_Func_8010704(3, 3, 1, 1, actor->pos.x >> 20, actor->pos.z >> 20);
+    other = (struct Actor *)__MapActor_GetActor(9);
+    API_Func_8010704(3, 3, 1, 1, other->pos.x >> 20, other->pos.z >> 20);
+}
+
 INCLUDE_ASM("asm/maps/babi_lighthouse/BabiLighthouse_MapInit.s");
 INCLUDE_ASM("asm/maps/babi_lighthouse/babi_lighthouse_data.s");
 

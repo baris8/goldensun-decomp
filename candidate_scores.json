@@ -1,5 +1,5 @@
 {
-  "candidate_fingerprint": "161888ec465388760f0dcd2fb48720eafba35b6bfa6a132c8d649de16feea7ed",
+  "candidate_fingerprint": "2106685ce04181b2b0be76dd49c3bcda05b3b1f114fb8a2eb0d2083fe117c506",
   "functions": {
     "common:common1:00000588": {
       "candidate": "src/non_matching/maps/common/common1/OvlFunc_common1_588.c",
@@ -139,8 +139,8 @@
       ],
       "fuzzy_match_percent": 78.0625,
       "name": "OvlFunc_881_20082cc",
-      "object_sha256": "f764a956b298f81d70126574694d424cbb16722fb1e758092df5aa9cc2d08941",
-      "reference_sha256": "5b795da39f18c49858553720b9af9dcc9d9c813f79506abc71e4cb3395441145",
+      "object_sha256": "3d09242e3f01c01e1dbcc05bc32f2b1d2d1611baf88ab2cfc79ec9065a535ed1",
+      "reference_sha256": "da7d23d3af992716300c3a19f42e9229e0bd6e09efa9bb5ce59c871d96db5fd0",
       "source": "src/maps/world_map_cutscenes.c",
       "target_size": 36
     },
@@ -152,8 +152,8 @@
       ],
       "fuzzy_match_percent": 88.23529,
       "name": "OvlFunc_881_20082f0",
-      "object_sha256": "44625e161648c51475b614e4547b22d6967be1c82e3d3b9adc4884f31b29f654",
-      "reference_sha256": "5b795da39f18c49858553720b9af9dcc9d9c813f79506abc71e4cb3395441145",
+      "object_sha256": "a427773a9a4272d6769d951ba93c0f52909fe2ed7b79304f7595612be4e53764",
+      "reference_sha256": "da7d23d3af992716300c3a19f42e9229e0bd6e09efa9bb5ce59c871d96db5fd0",
       "source": "src/maps/world_map_cutscenes.c",
       "target_size": 36
     },
@@ -256,8 +256,8 @@
       ],
       "fuzzy_match_percent": 79.141846,
       "name": "OvlFunc_895_2008258",
-      "object_sha256": "3c83bae61df8a15168501f13a0b3cbc2406f332b1a96302d75e306ddb52ea256",
-      "reference_sha256": "4e711b79b18090c23ef6a71cd28347e9a637af8e893a91513c2873aa56aefa50",
+      "object_sha256": "1045ed2faeee54af03010b8e88609292b2d716a447c3cae0f2677d783e319bc3",
+      "reference_sha256": "0cd19927d338d619f9898dda82890cd53348f4c24dcbe5347b0099ac0a0f784b",
       "source": "src/maps/sol.c",
       "target_size": 356
     },
@@ -854,8 +854,8 @@
       ],
       "fuzzy_match_percent": 88.19231,
       "name": "OvlFunc_924_200a648",
-      "object_sha256": "161923feda234c0514b1c4b5e1ccef0d432b7c1880066530287f56256dd3b6ea",
-      "reference_sha256": "1e99de87ed8c6315d9789b4110320f2ad9915f2fefffcbe735b65f6a8afce1d0",
+      "object_sha256": "56140b9e2e3040b404174a0516917f876863bad86bcd3c9909993f55cc1419df",
+      "reference_sha256": "18f60971d4aeae1d2bd73a7f2f80365e81dcd05862d2be3b80c684a2ae33f5f0",
       "source": "src/maps/mercury_lighthouse.c",
       "target_size": 60
     },
@@ -867,8 +867,8 @@
       ],
       "fuzzy_match_percent": 88.19231,
       "name": "OvlFunc_924_200adcc",
-      "object_sha256": "9ac51c17101eb849c0d9c647ca90bb0ddd4339d874acf67d1cf9cdb1661df5c8",
-      "reference_sha256": "1e99de87ed8c6315d9789b4110320f2ad9915f2fefffcbe735b65f6a8afce1d0",
+      "object_sha256": "5592259ffc0bf120cfd54db28716c419f34b96e888c62ba00f944f8843d789b3",
+      "reference_sha256": "18f60971d4aeae1d2bd73a7f2f80365e81dcd05862d2be3b80c684a2ae33f5f0",
       "source": "src/maps/mercury_lighthouse.c",
       "target_size": 60
     },
@@ -880,8 +880,8 @@
       ],
       "fuzzy_match_percent": 92.6,
       "name": "OvlFunc_924_200cf44",
-      "object_sha256": "bd92620a76b1b92a1851ef1131f507b8ffd027a41688b4557bdfd9443b97440c",
-      "reference_sha256": "1e99de87ed8c6315d9789b4110320f2ad9915f2fefffcbe735b65f6a8afce1d0",
+      "object_sha256": "18316cb7209068d4f0ff9ca574246776799e890c41503e221a2a1b91082af834",
+      "reference_sha256": "18f60971d4aeae1d2bd73a7f2f80365e81dcd05862d2be3b80c684a2ae33f5f0",
       "source": "src/maps/mercury_lighthouse.c",
       "target_size": 76
     },
@@ -893,8 +893,8 @@
       ],
       "fuzzy_match_percent": 83.80645,
       "name": "OvlFunc_924_200d1b0",
-      "object_sha256": "145ba81de7065501a57bc5ac8a740b1dcca809caea63a63532a43bcdac5302f2",
-      "reference_sha256": "1e99de87ed8c6315d9789b4110320f2ad9915f2fefffcbe735b65f6a8afce1d0",
+      "object_sha256": "69c90676a40a0df13cb826642e63c096ebdbd384a175bfcfea61aa0b886ea518",
+      "reference_sha256": "18f60971d4aeae1d2bd73a7f2f80365e81dcd05862d2be3b80c684a2ae33f5f0",
       "source": "src/maps/mercury_lighthouse.c",
       "target_size": 64
     },
@@ -997,8 +997,8 @@
       ],
       "fuzzy_match_percent": 84.054344,
       "name": "OvlFunc_932_2009770",
-      "object_sha256": "2329c6bc3a67fa156fe57f843ca45ac62e1936bc53814143304c3d3069ac2712",
-      "reference_sha256": "2a1d61fc78c20408ce198327b341ba559b5e73066a47b10a6e686de9ac86a278",
+      "object_sha256": "5e1896c65169eba5c11c285ca61b0ff8ea1f3771b1a263bbb9599b861ce603f9",
+      "reference_sha256": "f1f67de86d2db2a0ffb5b35048cbc815d1efbf5c8d82f4cdeceea061776803d3",
       "source": "src/maps/altin_peak.c",
       "target_size": 200
     },
@@ -1249,19 +1249,6 @@
       "source": "src/maps/tolbi_bound_ship_hull.c",
       "target_size": 76
     },
-    "overlay:rom_7ced6c:020089f4": {
-      "candidate": "src/non_matching/maps/crossbone_isle/OvlFunc_946_20089f4.c",
-      "candidate_size": 86,
-      "evaluated_with": [
-        "OvlFunc_946_20089f4"
-      ],
-      "fuzzy_match_percent": 87.325,
-      "name": "OvlFunc_946_20089f4",
-      "object_sha256": "4cd948dfbf21042cf13e63bfcac1ec2fcd39669331baf4029c7e76f772289082",
-      "reference_sha256": "2c987900d023d0df9a052ed65d8da5b274ecaa6fd084ab2f9127849320a46626",
-      "source": "src/maps/crossbone_isle.c",
-      "target_size": 88
-    },
     "overlay:rom_7ced6c:0200985c": {
       "candidate": "src/non_matching/maps/crossbone_isle/OvlFunc_946_200985c.c",
       "candidate_size": 82,
@@ -1270,8 +1257,8 @@
       ],
       "fuzzy_match_percent": 86.92308,
       "name": "OvlFunc_946_200985c",
-      "object_sha256": "ff00dcf7d00214d0b14e308bab5176946a873c5994692b160809c1b06e538b93",
-      "reference_sha256": "2c987900d023d0df9a052ed65d8da5b274ecaa6fd084ab2f9127849320a46626",
+      "object_sha256": "ac94a454cdf6ef05826bc55a9b6130106979e3f6dfa229fd9afb03ee4e12f4fa",
+      "reference_sha256": "76f782e6ef3679669914ca81dba2b5d1ff340f0a45c7c636d8cecbac20694274",
       "source": "src/maps/crossbone_isle.c",
       "target_size": 84
     },
@@ -1283,8 +1270,8 @@
       ],
       "fuzzy_match_percent": 97.4359,
       "name": "OvlFunc_946_20098b0",
-      "object_sha256": "fd4a2b7f3b7350e3b1513b7dd19551db4d85e44dbd8ed9e92b122c5b49a21711",
-      "reference_sha256": "2c987900d023d0df9a052ed65d8da5b274ecaa6fd084ab2f9127849320a46626",
+      "object_sha256": "37a6dbc6ad7ebf747b5edadfbf199f573f3a3ee7ae16c872fc3f956081f608e2",
+      "reference_sha256": "76f782e6ef3679669914ca81dba2b5d1ff340f0a45c7c636d8cecbac20694274",
       "source": "src/maps/crossbone_isle.c",
       "target_size": 84
     },
@@ -1296,8 +1283,8 @@
       ],
       "fuzzy_match_percent": 79.46067,
       "name": "OvlFunc_947_2009938",
-      "object_sha256": "25f39130e6557f77fb4073f285b3c28f49873ee3cfeeb16025c35b1ed459b3cc",
-      "reference_sha256": "ab924b95f5d5b0af507cdf3f2f14596c3af4497f74b0cbb62fd6bc1a0d387ffd",
+      "object_sha256": "ea08808260e96fd243d814fffbc30160cd3b21feb1e40845cb1e799b9ee1aca2",
+      "reference_sha256": "08ac457391b16b1f21572f838d1215bd43507b5b082cbcb5f285a1f71cb0845b",
       "source": "src/maps/crossbone_isle_dungeon_2.c",
       "target_size": 184
     },
@@ -1413,8 +1400,8 @@
       ],
       "fuzzy_match_percent": 62.410526,
       "name": "OvlFunc_953_200a3e0",
-      "object_sha256": "44e15fa68acdea33680c77c4406fbd7550d6370889394342aeefc1c90faa7910",
-      "reference_sha256": "5deead0f22fe9a80d081d8c4ed6eacafd246657e8e13d417789be5ebac3507fe",
+      "object_sha256": "b7db78ffedd6c8d4a75602790432b8b5f1abba707633ab157129aaec5b9bf3e3",
+      "reference_sha256": "976a74cbfb8c82278eec6eb62593fa32dd06ffc1ac05439a54dca174fc36296c",
       "source": "src/maps/colosseum.c",
       "target_size": 248
     },
@@ -1439,8 +1426,8 @@
       ],
       "fuzzy_match_percent": 89.19626,
       "name": "OvlFunc_955_2008160",
-      "object_sha256": "6f0f550e0661ab2213d41922cef8a8e81adde3406608189edd9b9dc8f4d0a9d9",
-      "reference_sha256": "edabfbeb5f9c01407eac09d56f4ee4dbce597db3782a0e57838c071f91fe673d",
+      "object_sha256": "bd3296f13963a7fed33e2a7b09e9245ad2eb905c4305c3db1c69c645de05a81a",
+      "reference_sha256": "199eba6a71ff8c9b73b80cf064bf6cab633aff6a5c66c309bf9eecc13c01adf5",
       "source": "src/maps/colosseum_final_2.c",
       "target_size": 248
     },
@@ -1452,8 +1439,8 @@
       ],
       "fuzzy_match_percent": 36.714287,
       "name": "OvlFunc_955_2008970",
-      "object_sha256": "78d6dbf3a1b2b812ec9f18776fb92738596c8297bcbbee0faeafff3d2f4cb3a7",
-      "reference_sha256": "edabfbeb5f9c01407eac09d56f4ee4dbce597db3782a0e57838c071f91fe673d",
+      "object_sha256": "1c715d056a4a628fd78879e11dd93001bfc92ce879d55e724b8fbf84ea1574ce",
+      "reference_sha256": "199eba6a71ff8c9b73b80cf064bf6cab633aff6a5c66c309bf9eecc13c01adf5",
       "source": "src/maps/colosseum_final_2.c",
       "target_size": 64
     },
@@ -1465,8 +1452,8 @@
       ],
       "fuzzy_match_percent": 91.88461,
       "name": "OvlFunc_956_20081c8",
-      "object_sha256": "b58f72d1bed4ca18927d6c0ec14157451cd621cbe14916e990d3d8b641e820b0",
-      "reference_sha256": "88a5b956c94e7f0e2ac653efd0a2822d702e80308fc194844a9e723a45ea8f3b",
+      "object_sha256": "9cb1a6813e2ad10ebca26451e4b9123e5586dd4472466b782087eae9180d74ba",
+      "reference_sha256": "727eea097d64a7619e429450de6ac5e42572938b1a9762c2ba6f1e577e5ab4b9",
       "source": "src/maps/colosseum_final_3.c",
       "target_size": 60
     },
@@ -1478,8 +1465,8 @@
       ],
       "fuzzy_match_percent": 76.0625,
       "name": "OvlFunc_956_2008204",
-      "object_sha256": "86932af84651e25f8fedaf672169ceb474c3ff33afa44b025821b700d4123cea",
-      "reference_sha256": "88a5b956c94e7f0e2ac653efd0a2822d702e80308fc194844a9e723a45ea8f3b",
+      "object_sha256": "2475d611a8cbe3c56a16580368e1a48b429a20f72d54414582bcdc7aa97df4ba",
+      "reference_sha256": "727eea097d64a7619e429450de6ac5e42572938b1a9762c2ba6f1e577e5ab4b9",
       "source": "src/maps/colosseum_final_3.c",
       "target_size": 72
     },
@@ -1491,8 +1478,8 @@
       ],
       "fuzzy_match_percent": 89.59872,
       "name": "ColosseumFinal3_MapInit",
-      "object_sha256": "cdfe524a36fb66c00a38794b513b686e8118e06f271e8f192a154b3b2795d491",
-      "reference_sha256": "88a5b956c94e7f0e2ac653efd0a2822d702e80308fc194844a9e723a45ea8f3b",
+      "object_sha256": "ca785d6b26e1315bcd70e56ee2d1ac8b4e8cf9bfc177f65a64e692e826ec006c",
+      "reference_sha256": "727eea097d64a7619e429450de6ac5e42572938b1a9762c2ba6f1e577e5ab4b9",
       "source": "src/maps/colosseum_final_3.c",
       "target_size": 1496
     },
@@ -1504,8 +1491,8 @@
       ],
       "fuzzy_match_percent": 77.818184,
       "name": "OvlFunc_956_200937c",
-      "object_sha256": "e4fa0ee6a39a3babc4c6ed2a972cacd5869f553259842b6001c9c8cd1704e71e",
-      "reference_sha256": "88a5b956c94e7f0e2ac653efd0a2822d702e80308fc194844a9e723a45ea8f3b",
+      "object_sha256": "46e8457f16286cdd352cecc35187fd590a57a3ac13325f3a4ca6989f717565b8",
+      "reference_sha256": "727eea097d64a7619e429450de6ac5e42572938b1a9762c2ba6f1e577e5ab4b9",
       "source": "src/maps/colosseum_final_3.c",
       "target_size": 68
     },
@@ -1725,8 +1712,8 @@
       ],
       "fuzzy_match_percent": 82.73913,
       "name": "OvlFunc_964_2009038",
-      "object_sha256": "fd24cc634f6d6fe9e1fe2487a5a815cc993ed620361ebcbd8b37de7e25f73881",
-      "reference_sha256": "19e8e589414198af9afe9eca2750c6d704f3dfed9cc5eb78df559962f8e0c9e8",
+      "object_sha256": "0c7100ec509323a6889130ee351a28f333f561fd38abb3e977628d305c55f326",
+      "reference_sha256": "35165e84bdda2bbc320b1217b63422836b55b2b3c21ecf9d95b226043b479fe2",
       "source": "src/maps/tunnel_ruins.c",
       "target_size": 48
     },
@@ -1764,8 +1751,8 @@
       ],
       "fuzzy_match_percent": 64.413795,
       "name": "OvlFunc_968_2008058",
-      "object_sha256": "b4863b800a3ef03e712d13ccd8aedb1a1df5bf231bf4d9931fd90f625a2f090f",
-      "reference_sha256": "9aff86a33e3a5092d7b887ce70eec8b18d052c5b97561605596bea397270c690",
+      "object_sha256": "ae0387011e28e70ad110e90443719f64f237afe0043ea145ee6963df150e2032",
+      "reference_sha256": "1ced0fe8e40992369e6c7de3495fee9ce468e6c1008a29c8b94c0f564d83971a",
       "source": "src/maps/venus_lighthouse.c",
       "target_size": 64
     },
@@ -1777,8 +1764,8 @@
       ],
       "fuzzy_match_percent": 82.911766,
       "name": "OvlFunc_968_2008098",
-      "object_sha256": "f3836130ef24b03b62b524744c5c1e9c5457f48e34f1d6dbc4f5ff25766b2546",
-      "reference_sha256": "9aff86a33e3a5092d7b887ce70eec8b18d052c5b97561605596bea397270c690",
+      "object_sha256": "df7898a846c11979bc00c86e060b266fec86e2e8b94fc5a334fd02e1cd9910bf",
+      "reference_sha256": "1ced0fe8e40992369e6c7de3495fee9ce468e6c1008a29c8b94c0f564d83971a",
       "source": "src/maps/venus_lighthouse.c",
       "target_size": 72
     },
@@ -1790,8 +1777,8 @@
       ],
       "fuzzy_match_percent": 85.542854,
       "name": "OvlFunc_968_200832c",
-      "object_sha256": "56de674b9d5e2a58360613b1d709dc18e4783f4ee6c5baedabbe62ed4f929dc7",
-      "reference_sha256": "9aff86a33e3a5092d7b887ce70eec8b18d052c5b97561605596bea397270c690",
+      "object_sha256": "237a2cd5b0fc8ea7678954e0baf63a6fff00ff26e35eb1a3f49eb67a11e4dfde",
+      "reference_sha256": "1ced0fe8e40992369e6c7de3495fee9ce468e6c1008a29c8b94c0f564d83971a",
       "source": "src/maps/venus_lighthouse.c",
       "target_size": 72
     },
@@ -1985,8 +1972,8 @@
       ],
       "fuzzy_match_percent": 57.875,
       "name": "Func_800d304",
-      "object_sha256": "6bf2f4305006d5fb750f585b916c21a01a5a982f2971d8bcff3e3ea59cdda614",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "e92eb727a707ff0beea9d373ccdd71800af0d91e9df16cb7b2ac4f9d7affb460",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 60
     },
@@ -1998,8 +1985,8 @@
       ],
       "fuzzy_match_percent": 92.0,
       "name": "ActorCmd_CallNative",
-      "object_sha256": "09d270efbda83020c6a7677ee2e6eb708f8d0a082a389394c89d4e1ba1230fa4",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "5a4c19d971167cadda98d3e95f05290da7a240ce3c19acc019480caed7c23557",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 52
     },
@@ -2011,8 +1998,8 @@
       ],
       "fuzzy_match_percent": 64.833336,
       "name": "ActorAttrOp_width",
-      "object_sha256": "5241e351a0661c42931a6c792bfcc0e6e645b5d13a30c1bbabec0a8aa71c542b",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "8854016702e43c2429f8b87521b4ca110fa1e7aa8040cff91d96f7207af837a8",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 48
     },
@@ -2024,8 +2011,8 @@
       ],
       "fuzzy_match_percent": 67.1875,
       "name": "ActorAttrOp_waitTimer",
-      "object_sha256": "b4a02062aca2b13bae2cfbd99a1e85d9cd95459ff526ed31f6b36fd7b9ce5c1f",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "5a258cc3ee6291b8632d6a1ca475e553ae74abcdb6cf1b4504cdbc5607ac7bcb",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 64
     },
@@ -2037,8 +2024,8 @@
       ],
       "fuzzy_match_percent": 59.53125,
       "name": "ActorAttrOp_unk64",
-      "object_sha256": "ac67b2baae92cc3acb340f134b3154c7041c1fd47fe351d015f8975af622dc34",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "ff53771ddce6e593ea87b86cf3eba086839ebc0a85b0a978c9dc827c9aebd7dd",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 64
     },
@@ -2050,8 +2037,8 @@
       ],
       "fuzzy_match_percent": 67.1875,
       "name": "ActorAttrOp_unk66",
-      "object_sha256": "bc2c11c772012a295f6c6fa86e1495650c78ac77be1c6a4d6bd7432608e6a99e",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "3d11e1b2e5c5f91c7945835bbbea8b84ecaab9021b3f934cd98fe2a0f2da0e20",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 64
     },
@@ -2063,8 +2050,8 @@
       ],
       "fuzzy_match_percent": 68.28571,
       "name": "ActorCmd_SetAttr",
-      "object_sha256": "c72e9ab4cd1c9840b32e9dde77e22861a113070c4cc227f15d3a64c32d033345",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "c49ba4b9871ce515681089b432c718407e2187eab7c7e0edfd9a0bd7cced1a3c",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 60
     },
@@ -2076,8 +2063,8 @@
       ],
       "fuzzy_match_percent": 68.28571,
       "name": "ActorCmd_IncAttr",
-      "object_sha256": "b11b9afea545fabda92629d12c2debbc6abf6e1cd5d034892bec551305fc50d9",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "0cf3273b5c59624bdff1d8388310058f2370665871f1dcaf2a09141448e29f67",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 60
     },
@@ -2089,8 +2076,8 @@
       ],
       "fuzzy_match_percent": 68.28571,
       "name": "ActorCmd_CmpAttr",
-      "object_sha256": "2e6b379cecf29786fade8531950472bccf63406efe9bd25983d2fb3122f42916",
-      "reference_sha256": "6e949df654a9128258d034691bc8dfd188320042f602f8c7fdf34732e2fb2972",
+      "object_sha256": "c50fcd4874e24aa03579e776ee7ff51e32407ee1248bbc35cfbe5d2cd56c803b",
+      "reference_sha256": "dbf71f9feaa258de8de27ab1772606b88881b97fe1f7f6800a16cfdc095622b4",
       "source": "src/actor/actor_script.c",
       "target_size": 60
     },
@@ -2518,8 +2505,8 @@
       ],
       "fuzzy_match_percent": 73.63333,
       "name": "Func_807a458",
-      "object_sha256": "4f3b7fdd5390d553cf6ba09d953bb0ab140234c21c7bfebfe6eac17331092e04",
-      "reference_sha256": "f0899b73ffd4bbae94cdfb8087c13791d240113cee56e2c8693badd32e1c1d11",
+      "object_sha256": "009f61e81385b77f8149732d5621a23365e8b7adc40f1041d9ea515186eabc8a",
+      "reference_sha256": "dc69c75444cd0f1725d56b03a2e37ff977fd07fd329af4e239981336778b4367",
       "source": "src/rpg/djinni.c",
       "target_size": 64
     },
@@ -3909,8 +3896,8 @@
       ],
       "fuzzy_match_percent": 32.5,
       "name": "SoundMainBTM",
-      "object_sha256": "9319645d65bb9db50af967bbd8ee8f6afce00080efa47840a45bec0a8f4070a3",
-      "reference_sha256": "185d633428ba0dd53cf214f13d615e24322ffcc175da4dac02fac6d55fc1a820",
+      "object_sha256": "1f1be17df5533dc7fa64699e246f1fbe08aa0eede38442041c317b6d9ff56113",
+      "reference_sha256": "f221d950a24faed4469a34eb9860666154f886b91ac0ba1f04ec455f390dac55",
       "source": "src/other/sub_80f95e0.c",
       "target_size": 24
     },
@@ -3922,14 +3909,14 @@
       ],
       "fuzzy_match_percent": 75.5,
       "name": "ply_pend",
-      "object_sha256": "e24082d509811096f77ea7f6cba28640bc82923cd4c55264be964d8a4734427a",
-      "reference_sha256": "185d633428ba0dd53cf214f13d615e24322ffcc175da4dac02fac6d55fc1a820",
+      "object_sha256": "d63327caa39d55c69e34af768c1f84528ad3f703c7af30139bafc04c32363d37",
+      "reference_sha256": "f221d950a24faed4469a34eb9860666154f886b91ac0ba1f04ec455f390dac55",
       "source": "src/other/sub_80f95e0.c",
       "target_size": 20
     }
   },
   "policy": "objdiff-function-scores-original-byte-weights-v1",
-  "progress_sha256": "30acc33eca7f9ef733ae96babc51ceb24d2dd020c2cfc6b6ad7546a4d01e5e4f",
+  "progress_sha256": "77b269065d01f7efffd5b9b0634ec5be3bd76ac2021e224f89cd0b57dd7da0ef",
   "schema": 1,
   "scorer": {
     "config": [

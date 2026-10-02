@@ -12,7 +12,29 @@ void OvlFunc_932_2008030(void) {
     __Func_8091f14(0xe, 0x17);
 }
 
-INCLUDE_ASM("asm/maps/altin_peak/OvlFunc_932_2008040.s");
+int OvlFunc_932_2008040(struct Actor *actor) {
+    extern int __atan2(int, int);
+    struct Actor *target;
+    unsigned short angle;
+    int diff;
+
+    target = actor->linkedActor;
+    if (target != 0) {
+        actor->__unk5A &= 0xfe;
+        angle = __atan2(target->pos.z - actor->pos.z, target->pos.x - actor->pos.x);
+        diff = (short)(angle - actor->facing);
+        if (diff != 0) {
+            if (diff > 0x80 << 5) {
+                diff = 0x80 << 5;
+            }
+            if (diff < -0x1000) {
+                diff = -0x1000;
+            }
+            actor->facing += diff;
+        }
+    }
+    return 1;
+}
 
 extern unsigned int __MapActor_GetActor(unsigned int arg0);
 
@@ -387,12 +409,24 @@ unsigned char f23;
   __SetFlag(0x204);
 }
 
-INCLUDE_ASM("asm/maps/altin_peak/OvlFunc_932_20086a0.s");
+extern unsigned char Lm932_5238[] __asm__(".Lm932_5238");
+extern int __Random();
+
+void OvlFunc_932_20086a0(void) {
+    volatile unsigned short *dispcnt = (volatile unsigned short *)(0x80 << 19);
+    int val;
+
+    val = (short)(*dispcnt & 0xfdff);
+    if (((unsigned int)__Random() * 100) >> 16 >= *(unsigned short *)Lm932_5238) {
+        val |= 0x80 << 2;
+    }
+    *dispcnt = (unsigned int)val << 16 >> 16;
+}
+
 typedef struct { unsigned char _bytes[4]; } ActorCmd;
 extern void *iwram_3001e70;
 extern ActorCmd gScript_932__0200bd48[];
 extern void OvlFunc_932_20086a0(void);
-extern unsigned char Lm932_5238[] __asm__(".Lm932_5238");
 
 void __Func_8012330(int, int, int);
 void __CutsceneWait(int);

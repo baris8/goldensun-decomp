@@ -1134,7 +1134,19 @@ int CrossboneIsleDungeon2_GetEvents(void)
 
 void __Actor_SetSpriteFlags(void *, int);
 
-INCLUDE_ASM("asm/maps/crossbone_isle_dungeon_2/OvlFunc_947_200a5f8.s");
+#include "actor.h"
+
+void OvlFunc_947_200a5f8(int id) {
+    extern void __Actor_SetSpriteFlags();
+    struct Actor *actor;
+
+    actor = (struct Actor *)__MapActor_GetActor(id);
+    actor->__unk59 &= 0xfe;
+    actor->flags |= 2;
+    actor->__unk55 = 0;
+    __Actor_SetSpriteFlags(actor);
+    actor->sprite->oam.priority = 2;
+}
 
 
 void OvlFunc_947_200a63c(int arg0)

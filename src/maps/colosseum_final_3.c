@@ -64,7 +64,28 @@ void OvlFunc_956_200824c(void) {
 }
 
 
-INCLUDE_ASM("asm/maps/colosseum_final_3/OvlFunc_956_2008274.s");
+void OvlFunc_956_2008274(void) {
+    struct Actor *actor;
+
+    actor = (struct Actor *)__MapActor_GetActor(9);
+    actor->scale.x = 0x80 << 9;
+    actor->scale.y = 0x80 << 9;
+
+    actor = (struct Actor *)__MapActor_GetActor(0xb);
+    actor->accel = 0x6666;
+    actor->speed = 0xcccc;
+    API_Actor_TravelTo(actor, actor->pos.x, 0x80 << 14, actor->pos.z);
+
+    actor = (struct Actor *)__MapActor_GetActor(0xa);
+    actor->accel = 0x6666;
+    actor->speed = 0xcccc;
+    API_Actor_TravelTo(actor, actor->pos.x, 0x80 << 11, actor->pos.z);
+
+    API_SetFlag(0x362);
+    API_Func_8010704(0xf, 0xc, 1, 1, 0xd, 0xc);
+    API_Func_8010704(0xe, 0xc, 1, 1, 9, 0xc);
+}
+
 INCLUDE_ASM("asm/maps/colosseum_final_3/OvlFunc_956_20082f8.s");
 
 void OvlFunc_956_2008404(void) {

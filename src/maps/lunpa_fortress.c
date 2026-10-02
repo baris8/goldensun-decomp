@@ -490,7 +490,15 @@ void OvlFunc_959_2008dcc(void) {
         __SetFlag(v + 0x32d);
     }
 }
-INCLUDE_ASM("asm/maps/lunpa_fortress/OvlFunc_959_2008e30.s");
+extern int L7754[][2] __asm__(".Lm959_7754");
+
+void OvlFunc_959_2008e30(int idx) {
+    int x = L7754[idx][0];
+    int y = L7754[idx][1];
+    __Func_80105d4(0x37, 0x79, 1, 3, x, y);
+    __Func_80105d4(0x38, 0x79, 1, 1, x + 1, y);
+    __Func_80105d4(x, y - 0x3f, 1, 1, x, y - 0x3e);
+}
 
 extern void OvlFunc_959_2008e30(int a);
 

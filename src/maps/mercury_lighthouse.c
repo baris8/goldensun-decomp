@@ -3,6 +3,7 @@
 #include "nonmatching.h"
 #include "api.h"
 #include "actor.h"
+#include "rpg.h"
 
 /* auto void-veneer protos (add_void_protos.py) */
 extern void __ActorMessage_Wait();
@@ -434,7 +435,30 @@ int MercuryLighthouse_GetEvents(void)
     return (int)Lm924_6ec8;
 }
 
-INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_2008f84.s");
+extern void OvlFunc_924_2008cd0(void);
+
+void OvlFunc_924_2008f84(int arg0) {
+    extern void __Actor_SetSpriteFlags(unsigned char *, int);
+    extern void __Func_8092950(int, int);
+    struct Actor *actor;
+
+    actor = (struct Actor *)__MapActor_GetActor(0);
+    API_CutsceneStart();
+    API_PlaySound(0xe4);
+    actor->update = (actorfun_t *)OvlFunc_924_2008cd0;
+    actor->speed = 0x3333;
+    API_MapActor_SetAnim(0, 2);
+    API_MapActor_TravelBy(0, 0, -6);
+    API_MapActor_WaitMovement(0);
+    __Func_8092950(0, 0xf);
+    __Actor_SetSpriteFlags(__MapActor_GetActor(0), 0);
+    actor->update = 0;
+    API_CutsceneWait(0x1e);
+    API_MapTransitionOut();
+    API_WaitMapTransition();
+    API_Func_8091e9c(arg0);
+    API_CutsceneEnd();
+}
 
 extern void __Actor_SetSpriteFlags(unsigned char *, int);
 extern void __Func_8092b08(int, int);
@@ -452,7 +476,7 @@ void OvlFunc_924_2008ffc(int a) {
 }
 
 extern int *iwram_3001ebc;
-extern int OvlFunc_924_2008f84(int);
+extern void OvlFunc_924_2008f84(int);
 
 void OvlFunc_924_2009060(void) {
     int *r3;
@@ -1387,7 +1411,23 @@ void OvlFunc_924_200ca08(void)
 }
 INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_200cc68.s");
 INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_200cf44.s");
-INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_200cf90.s");
+
+void OvlFunc_924_200cf90(int item, int replacement) {
+    extern int __CheckPartyItem(int item);
+    extern int __CheckItem(int pc, int item);
+    extern struct Unit *__GetUnit(int pc);
+    int pc;
+    int slot;
+
+    pc = __CheckPartyItem(item);
+    if (pc != -1) {
+        slot = __CheckItem(pc, item);
+        if (slot != -1) {
+            __GetUnit(pc)->items[slot] = replacement;
+        }
+    }
+}
+
 INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_200cfcc.s");
 INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_200d158.s");
 INCLUDE_ASM("asm/maps/mercury_lighthouse/OvlFunc_924_200d1b0.s");

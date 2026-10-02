@@ -661,7 +661,15 @@ void OvlFunc_968_20099f0(void)
     __CutsceneEnd();
 }
 
-INCLUDE_ASM("asm/maps/venus_lighthouse/OvlFunc_968_2009a14.s");
+void OvlFunc_968_2009a14(int arg0) {
+    struct Actor *actor;
+
+    actor = (struct Actor *)arg0;
+    actor->flags |= 2;
+    actor->__unk55 = 0;
+    API_Func_8010704(9, 0x18, 1, 1, actor->pos.x >> 20, actor->pos.z >> 20);
+}
+
 void OvlFunc_968_2009a50(int arg0)
 {
     extern unsigned int OvlFunc_968_2008058(unsigned int, unsigned int, unsigned int, unsigned int);

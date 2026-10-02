@@ -1,5 +1,6 @@
 /* rpg/pc.c -- consolidated TU. */
 #include "nonmatching.h"
+#include "rpg.h"
 
 extern int GetPartySize();
 extern unsigned short RPGRandom();
@@ -191,7 +192,31 @@ INCLUDE_ASM_SECTION("asm/rpg/pc/Func_8079c8c.s", ".text.rpg_pc_3");
 INCLUDE_ASM_SECTION("asm/rpg/pc/CheckEquipmentCritBoost.s", ".text.rpg_pc_3");
 INCLUDE_ASM_SECTION("asm/rpg/pc/Func_8079d1c.s", ".text.rpg_pc_3");
 INCLUDE_ASM_SECTION("asm/rpg/pc/Func_8079d7c.s", ".text.rpg_pc_3");
-INCLUDE_ASM_SECTION("asm/rpg/pc/Func_8079e9c.s", ".text.rpg_pc_3");
+
+int Func_8079e9c(struct Unit *unit, unsigned int value) {
+    extern unsigned char *GetEnemyInfo(unsigned int id);
+    extern unsigned char *GetClassInfo(unsigned int id);
+    unsigned char *table;
+    int i;
+
+    if (unit->curClass == 0) {
+        table = GetEnemyInfo(unit->pcID) + 0x48;
+        for (i = 0; i <= 2; i++) {
+            if (*table == value) {
+                return 1;
+            }
+            table++;
+        }
+    } else {
+        table = GetClassInfo(unit->curClass) + 0x50;
+        for (i = 0; i <= 2; i++) {
+            if (*table++ == value) {
+                return 1;
+            }
+        }
+    }
+    return 0;
+}
 
 int Func_8079ef8(int arg0)
 {
